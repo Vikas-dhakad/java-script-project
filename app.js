@@ -23,25 +23,25 @@
 
 
 // todo app
-// let inp = document.querySelector("input");
-// let ul = document.querySelector("ul");
-// let btn = document.querySelector("button");
-// btn.addEventListener("click", function () {
-//     let item = document.createElement("li");
-//     item.innerText = inp.value;
-//     let dbt = document.createElement("button");
-//     dbt.innerText = "delete";
-//     dbt.classList.add("delete");
-//     item.appendChild(dbt);
+let inp = document.querySelector("input");
+let ul = document.querySelector("ul");
+let btn = document.querySelector("button");
+btn.addEventListener("click", function () {
+    let item = document.createElement("li");
+    item.innerText = inp.value;
+    let dbt = document.createElement("button");
+    dbt.innerText = "delete";
+    dbt.classList.add("delete");
+    item.appendChild(dbt);
 
-//     ul.appendChild(item);
-//     inp.value = "";
-// });
-//  ul.addEventListener("click",function(event){
-//     if(event.target.nodeName=="BUTTON"){
-//         let itemList=event.target.parentElement;
-//         itemList.remove();
-//     }})
+    ul.appendChild(item);
+    inp.value = "";
+});
+ ul.addEventListener("click",function(event){
+    if(event.target.nodeName=="BUTTON"){
+        let itemList=event.target.parentElement;
+        itemList.remove();
+    }})
 
 
 
